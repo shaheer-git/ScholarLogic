@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<!-- 
+ Class-4: Topics Covered
+ -> Started CSS.
+ -> class selector.
+ -> id selector.
+ -> attributes selector.
+ -> pseudo-classes selector.
+ -> pseudo-elements selector.
+ -> combinator selector.
+ -->
+<body>
+
+    <main id="container" class="main-container">
+        <a href="https://www.google.com/" target="_blank">Google.com</a>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <div>
+            <p>
+                Div 1 is a placeholder
+            </p>
+        </div>
+        <!-- div is inside span -->
+        <span>
+            <div>
+                <p>
+                    Div 2 is a placeholder
+                </p>
+            </div>
+        </span>
+    </main>
+</body>
+
+</html>

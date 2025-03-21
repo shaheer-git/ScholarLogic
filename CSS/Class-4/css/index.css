@@ -1,0 +1,60 @@
+/* id selector */
+#container {
+    background-color: aquamarine;
+}
+
+/* class selector */
+
+.main-container {
+    width: 300px;
+}
+
+/* attribute selector */
+[class=main-container] {
+    background-color: blue;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* pseudo-class selector */
+a:hover {
+    color: red;
+}
+
+/* pseudo-element selector */
+p::before {
+    content: "Link -";
+}
+
+/* element selector */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Combinator selector */
+main div {
+    /* main
+           div -> this element will be styled
+           div -> this element will be styled
+           span -> No, because we have not selected 
+               div -> No, because it is not the direct child of main
+     */
+    width: 25%;
+    height: 200px;
+    background-color: rgb(191, 230, 173);
+    margin: 10px;
+}
+
+main > div {
+    /* main
+           div -> this element will be styled
+           div -> No, because '>' it will select only one immediate child
+           span -> No, because we have not selected 
+               div -> No, because it is not the direct child of main
+     */
+    background-color: pink;
+}
+

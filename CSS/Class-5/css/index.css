@@ -1,0 +1,47 @@
+:root {
+    /* css variables */
+    --Yi4Nb: #3f424a;
+    --pEa0Bc: #cdcdcd;
+    --kloG3: #3f424a;
+    --black: #1f2128;
+    --Pa8Wlb: #a8c7fa;
+    --izGsqb: #a8c7fa;
+    --todMNcl: #101218;
+    --p9J9c: #a8c7fa;
+}
+
+body {
+    /* margin and background properties */
+    margin: 0;
+    padding: 0;
+    background-image: url('../');
+    background-size: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    padding: 20px;
+    /* border: 1px solid var(--black);  border */
+
+    border-width: 1px;
+    border-style: double;
+    border-radius: 5px;
+
+    margin: 20px;
+    color: var(--kloG3);
+}
+
+.container {
+    /* Topic Not covered */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+#main-div p {
+    color: #333;
+    font-size: 24px;
+}
