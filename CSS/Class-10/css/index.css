@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0px;
+    width: 100vw;
+    height: 200vh;
+}
+/* For making the Entire container position.(It absolute works with relative)  */
+/* .parent {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    position: relative;
+    top: 0%;
+    left: 50%;
+} */
+.child1 {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 3;
+    border: 1px solid black;
+}
+.child2 {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    border: 1px solid black;
+}
+.child3 {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: 1;
+    border: 1px solid black;
+}
+ /* For making the Entire container position. */
+/* .parent {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+} */
+
+/* This is for relative will act as a parent. */
+.parent {
+    height: 300px;
+    width: 800px;
+    background-color: red;
+    position: relative;
+    top: 5%;
+    left: 50%;
+}
+
+.para1 {
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+}
+
+/* Float property */
+.para2 {
+    width: 400px;
+    height: 200px;
+    background-color: pink;
+    float: right;
+}
+
+
+/* .parent {
+
+    position: unset !important;
+} */
+

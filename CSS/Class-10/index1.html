@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Position and Float Example</title>
+    <style>
+        /* Position Styles */
+        .static-element {
+            position: static;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .relative-element {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .absolute-parent {
+            position: relative;
+            height: 200px;
+            background-color: lightyellow;
+        }
+
+        .absolute-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .fixed-element {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: lightpink;
+            padding: 10px;
+        }
+
+        .sticky-element {
+            position: sticky;
+            top: 0;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        /* Float Styles */
+        .float-left {
+            float: left;
+            background-color: lightgray;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .float-right {
+            float: right;
+            background-color: lightblue;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .clear-float {
+            clear: both;
+        }
+
+        .float-with-margin {
+            float: left;
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 0 auto;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+        .flex-item {
+            flex: 1;
+            background-color: lightpink;
+            padding: 10px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position and Float Example</h1>
+
+    <div class="static-element">Static Element</div>
+    <div class="relative-element">Relative Element</div>
+
+    <div class="absolute-parent">
+        <div class="absolute-child">Absolute Child</div>
+    </div>
+
+    <div class="fixed-element">Fixed Element</div>
+
+    <div class="sticky-element">Sticky Element</div>
+
+    <div class="float-left">Float Left</div>
+    <div class="float-right">Float Right</div>
+    <div class="clear-float"></div>
+
+    <div class="float-with-margin">Float with Margin Auto</div>
+
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+</body>
+
+</html>
