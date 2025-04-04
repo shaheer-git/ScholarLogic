@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 50vh;
+            width: 50vw;
+            background-color: aqua;
+            /* display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; */
+        }
+        .container > div {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+        /* width is < 425px this is for mobile */
+        @media screen and (max-width: 425px)  {
+            .container {
+                background-color: red;
+                width: 100vw;
+            }
+        }
+        /* width is > 425px and < 768px this is for tablets */
+        @media screen and (min-width: 425px) and (max-width: 768px) { 
+            .container {
+                background-color: burlywood;
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div> -->
+    </div>
+</body>
+</html>
