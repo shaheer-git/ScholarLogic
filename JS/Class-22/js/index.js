@@ -8,7 +8,7 @@ function getFor(obj) {
     }, obj)
 }
 // Using Foreach.
-let arr = [100, 101, 102, 104];
+let arr = [100, 101, 102, 104, 101];
 let gloalObj = {
 
 }
@@ -30,4 +30,16 @@ let result1 = arr.map(function (value, index, arr ) {
     return value * 2;
 })
 
-console.log(result1)
+let result2 = arr.filter(function (value, index, arr ) {
+    return value === 101
+})
+
+let result3 = arr.find(function (value, index, arr ) {
+    return value === 101
+})
+
+let result4 = arr.reduce(function (value, index, arr ) {
+    return value === 101
+})
+
+console.log(result4)
