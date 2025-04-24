@@ -43,11 +43,11 @@ obj.hasOwnProperty("name");
 //                  |
 // obj2             |     "Poojitha"
 //                  |     
-// obj3             |
+// obj3             |     "Shaheer"
 
 
 let obj2 = { name: "MH" };
 
 let obj3 = structuredClone(obj2);
 
-obj3.name = "Poojitha";
+obj3.name = "Shaheer";
