@@ -21,7 +21,7 @@ let arr1 = new Array();
 // Accessing an array
 arr[0]
 arr.at(0)
-arr.splice(1, 0, "shaheer")
+// arr.splice(1, 0, "shaheer")
 
 // Insert an element
 arr.push(33); // at the end
@@ -34,6 +34,22 @@ arr.splice(1, 1)
 delete arr[1];
 
 // Replacing
-arr.splice(1, 1, "SS")
+// arr.splice(1, 1, "SS")
+
+// subarray
+arr.slice(0, 4);
+
+arr.includes("Shaheer");
+
+arr.indexOf("Shaheer");
+
+arr.lastIndexOf("Shaheer");
+
+arr.find((item, index, arr)=> item === "Shaheer")
+
+console.log(arr.findIndex((item, index, arr)=> item === "Shaheer"))
+
+arr.findLastIndex((item, index, arr)=> item === "Shaheer")
 
 
+arr.filter((item, index, arr)=> item === "Shaheer")
