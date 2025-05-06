@@ -4,6 +4,7 @@ let obj = {
     age: 100
 };
 
+// Destructuring
 const { name, street, age } = obj;
 
 // Array
