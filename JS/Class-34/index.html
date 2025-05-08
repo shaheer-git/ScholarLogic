@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body * {
+          margin: 10px;
+          border: 1px solid blue;
+        }
+      </style>
+</head>
+
+<body onload="handleOnLoad()">
+    <h1>Common remaining Events in js.</h1>
+    <input type="text" onkeydown="myFunction()">
+
+    <p id="demo"></p>
+
+    <!-- Event Bubbling and Capturing -->
+
+    <!-- Bubbling (Child to parant)-->
+    <form onclick="formHandler()">FORM     
+        <div onclick="divHandler('div')">DIV
+            <p onclick="pHandler('p')">P</p>
+        </div>
+    </form>
+
+    <!-- Capturing (parant to Child)-->
+    <!-- <form onclick="alert('form')">FORM
+        <div onclick="alert('div')">DIV
+            <p onclick="alert('p')">P</p>
+        </div>
+    </form> -->
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
