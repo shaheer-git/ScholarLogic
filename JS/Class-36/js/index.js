@@ -17,3 +17,5 @@ let checkEven = new Promise((resolve, reject) => {
 checkEven
 .then((successMsg)=>console.log(successMsg))
 .catch((errMsg)=>console.log(errMsg))
+
+
