@@ -22,3 +22,23 @@ class Male extends Human{
 
 let human = new Human("Shaheer", 28, "BTM");
 console.log(human.getFullDetails())
+
+// 2. Way of writing a standard code.
+
+let Login = {
+    handleInputs: () => {
+
+    },
+    handleSubmit: () => {
+
+    },
+    handleResetForData: () => {
+
+    }
+}
+
+// 3. way
+
+(function () {
+    
+})();
